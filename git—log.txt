@@ -1,0 +1,8 @@
+* d26c5fb : add config.py
+* 7e46b70 : Modify the entry file to add unit tests
+* 5949e66 : fixbug
+* a4b60e9 : fix bug
+* 00a56ed : update readme.md
+* 630ae9a : update readme.md
+* 9d55456 : add readme.md
+* bc0ff34 : add init
