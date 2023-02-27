@@ -102,7 +102,7 @@ def get_chatgpt(id):
 
 
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 def generate_text(prompt):
     completions = openai.Completion.create(
