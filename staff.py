@@ -1,5 +1,6 @@
 import sqlite3
 import openai
+import config
 from flask import Flask, render_template , request
 
 app = Flask(__name__)
@@ -100,9 +101,6 @@ def get_chatgpt(id):
 
     return generate_text(detail_string)
 
-
-
-openai.api_key = "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"
 
 def generate_text(prompt):
     completions = openai.Completion.create(
