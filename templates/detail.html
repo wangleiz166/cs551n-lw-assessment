@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        .navbar-brand img {
+            max-height: 50px;
+        }
+        
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .navbar-dark .navbar-toggler-icon {
+            filter: invert(1);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mx-auto">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="https://www.abdn.ac.uk/global/images/layout/UoA_Primary_Logo_RGB_2018.svg?v=1537886890" alt="Logo" class="me-2" height="40">
+                <span class="flex-grow-1">Staff Management</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">User information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/readme.md">readme.md</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <div class="row">
+            <div class="col-12">
+                <h1>Employee Details</h1>
+                <table class="table employee-detail-table">
+                    <tr>
+                        <td>Employee ID</td>
+                        <td>{{ detail_row["employeeid"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>{{ detail_row["age"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Attrition</td>
+                        <td>{{ detail_row["attrition"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Business Travel</td>
+                        <td>{{ detail_row["businesstravel"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Department</td>
+                        <td>{{ detail_row["department"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Distance From Home</td>
+                        <td>{{ detail_row["distancefromhome"] }} miles</td>
+                    </tr>
+                    <tr>
+                        <td>Education</td>
+                        <td>{{ detail_row["education"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Education Field</td>
+                        <td>{{ detail_row["educationfield"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Employee Count</td>
+                        <td>{{ detail_row["employeecount"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>{{ detail_row["gender"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Job Level</td>
+                        <td>{{ detail_row["joblevel"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Job Role</td>
+                        <td>{{ detail_row["jobrole"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Marital Status</td>
+                        <td>{{ detail_row["maritalstatus"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Income</td>
+                        <td>${{ detail_row["monthlyincome"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Num Companies Worked</td>
+                        <td>{{ detail_row["numcompaniesworked"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Over 18</td>
+                        <td>{{ detail_row["over18"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Percent Salary Hike</td>
+                        <td>{{ detail_row["percentsalaryhike"] }}%</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Hours</td>
+                        <td>{{ detail_row["standardhours"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Stock Option Level</td>
+                        <td>{{ detail_row["stockoptionlevel"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Total Working Years</td>
+                        <td>{{ detail_row["totalworkingyears"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Training Times Last Year</td>
+                        <td>{{ detail_row["trainingtimeslastyear"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Years at Company</td>
+                        <td>{{ detail_row["yearsatcompany"] }}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Years Since Last Promotion</td>
+                        <td>{{ detail_row["yearssincelastpromotion"] }}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Years Since Last Promotion</td>
+                        <td>{{ detail_row["yearswithcurrmanager"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Years With Curr Manager</td>
+                        <td>{{ detail_row["yearswithcurrmanager"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Environment Satisfaction</td>
+                        <td>{{ detail_row["environmentsatisfaction"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Job Satisfaction</td>
+                        <td>{{ detail_row["jobsatisfaction"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Work Life Balance</td>
+                        <td>{{ detail_row["worklifebalance"] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Performance Rating</td>
+                        <td>{{ detail_row["performancerating"] }}</td>
+                    </tr>
+
+                </table>
+                <a href="/" class="btn btn-primary">Return</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
