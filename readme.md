@@ -23,7 +23,7 @@ python3 arse_csv.py
 ```
 Running the application (codio run as an example)
 ```shell
-export FLASK_APP=app.py
+export FLASK_APP=staff.py
 
 python3 -m flask run -h 0.0.0.0
 ```
