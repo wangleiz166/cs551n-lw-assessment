@@ -6,7 +6,7 @@ git clone https://github.com/wangleiz166/cs551n-lw-assessment.git
 ```
 Go to the project catalogue：
 ```shell
-cd app
+cd cs551n-lw-assessmentp
 ```
 install and set the local version of Python to 3.7.0 using the pyenv version manager.
 ```shell
