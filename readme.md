@@ -43,6 +43,5 @@ When using the staff project, you can perform the following tasks.
 3. AI Analysis: Clicking on the 'Analysis' button on the employee details page will send all the information about the employee to openai, which will provide openai with advice on work and life.
 In summary, the staff project is a web application developed using Flask and SQLite that includes employee information management and artificial intelligence features that can be used to present and manage employee information and provide work and life advice to employees. The staff project can be easily deployed and used across different operating systems and computers by using github and render for versioning and deployment.
 
-Translated with www.DeepL.com/Translator (free version)
 
 render-url: https://lw-staff.onrender.com/
