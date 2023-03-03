@@ -73,9 +73,9 @@ The application is designed using the Bootstrap front-end framework and includes
 
 The application is designed using Python's Flask framework and includes the following components:
 
-- Flask应用程序：Used to process HTTP requests and responses.
-- SQLite数据库：Used to store employee information and employee privacy information data.
-- OpenAI库：For natural language processing and generating intelligent chat logs.
+- Flask applications：Used to process HTTP requests and responses.
+- SQLite Database：Used to store employee information and employee privacy information data.
+- OpenAI Library：For natural language processing and generating intelligent chat logs.
 
 ### Development
 
