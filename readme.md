@@ -8,6 +8,12 @@ Go to the project catalogue：
 ```shell
 cd app
 ```
+install and set the local version of Python to 3.7.0 using the pyenv version manager.
+```shell
+pyenv install 3.7.0
+pyenv local 3.7.0
+```
+
 Create and activate a Python virtual environment：
 ```shell
 python3 -m venv .venv
@@ -15,6 +21,7 @@ source .venv/bin/activate
 ```
 Install the Python dependencies required for the project：
 ```shell
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 Initialise and import data
@@ -35,5 +42,7 @@ When using the staff project, you can perform the following tasks.
 2. View staff details: Click the Details button on the staff list to view staff details, including age, gender, job role, job satisfaction, etc.
 3. AI Analysis: Clicking on the 'Analysis' button on the employee details page will send all the information about the employee to openai, which will provide openai with advice on work and life.
 In summary, the staff project is a web application developed using Flask and SQLite that includes employee information management and artificial intelligence features that can be used to present and manage employee information and provide work and life advice to employees. The staff project can be easily deployed and used across different operating systems and computers by using github and render for versioning and deployment.
+
+Translated with www.DeepL.com/Translator (free version)
 
 render-url: https://lw-staff.onrender.com/
