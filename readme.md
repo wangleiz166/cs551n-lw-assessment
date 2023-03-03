@@ -1,4 +1,22 @@
-### Installation
+# Staff Application Project
+
+## What is it?
+This is a web application for managing employee information and analyzing their work-related issues using artificial intelligence. The application allows users to view a list of employees and their details, as well as perform an analysis on their information using a chatbot powered by GPT.
+
+The application is built using Python and Flask, and uses a SQLite database to store the employee information. The front-end is designed using Bootstrap and Jinja2 templates.
+
+The GPT chatbot is powered by OpenAI's GPT-3 API, which provides natural language processing and machine learning capabilities. The chatbot can provide personalized advice to employees based on their information, and can help managers identify and address issues related to employee satisfaction, productivity, and retention.
+
+The application is intended for use by HR managers and other personnel involved in employee management and engagement. It provides a convenient and efficient way to track employee information and gain insights into their needs and concerns.
+
+## Main Features
+
+1. View Staff Information: On the Staff List page, view the name, position, department, and employee ID of all staff members.
+2. View staff details: Click the Details button on the staff list to view staff details, including age, gender, job role, job satisfaction, etc.
+3. AI Analysis: Clicking on the 'Analysis' button on the employee details page will send all the information about the employee to openai, which will provide openai with advice on work and life.
+
+
+## Installation
 
 Clone or download the project code：
 ```shell
@@ -22,26 +40,45 @@ source .venv/bin/activate
 Install the Python dependencies required for the project：
 ```shell
 pip install --upgrade pip
-pip install -r requirements.txt
+pip install flask
+pip install openai
 ```
 Initialise and import data
 ```shell
 python3 arse_csv.py
 ```
-Running the application (codio run as an example)
+
+## Running the application
+
+#### Codio Running the application
 ```shell
 export FLASK_APP=staff.py
 
 python3 -m flask run -h 0.0.0.0
 ```
 
-### Use
-When using the staff project, you can perform the following tasks.
+#### Local operation Running the application
+```shell
+export FLASK_APP=staff.py
 
-1. View staff information: On the staff list page, view the name, position, department and job number of all staff.
-2. View staff details: Click the Details button on the staff list to view staff details, including age, gender, job role, job satisfaction, etc.
-3. AI Analysis: Clicking on the 'Analysis' button on the employee details page will send all the information about the employee to openai, which will provide openai with advice on work and life.
-In summary, the staff project is a web application developed using Flask and SQLite that includes employee information management and artificial intelligence features that can be used to present and manage employee information and provide work and life advice to employees. The staff project can be easily deployed and used across different operating systems and computers by using github and render for versioning and deployment.
+python3 -m flask run
+```
+#### Render Running the application
+1.Open address https://render.com/ Register Login
 
+2.Click Dashboard Click "NEW" , "Web Service"
 
-render-url: https://lw-staff.onrender.com/
+3.Connect our repository
+
+4.Fill in as follows（eg:）
+
+    name:  lw-staff
+    Environment: Python3
+    Build command: $ pip install -r requirements.txt
+    Start command: $ gunicorn staff:app
+
+5.Click 'Create Web Service'
+
+6.Until build successfully
+
+7.Access：https://lw-staff.onrender.com/
