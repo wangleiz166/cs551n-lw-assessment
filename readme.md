@@ -84,6 +84,7 @@ python3 -m flask run
 7.Access：https://lw-staff.onrender.com/
 
 ##Test
+
 Run the behave command to see the results
 ```shell
 behave
@@ -120,3 +121,4 @@ sudo chmod +x /usr/local/bin/chromedriver
 6.Start environment on top of codio
 
 7.Run the behave command to see the results
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230304012443.png)
