@@ -88,7 +88,7 @@ Run the behave command to see the results
 ```shell
 behave
 ```
-![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230226215953.png)
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230304012443.png)
 
 ##Test installation process notes
 1.Installing selenium
@@ -108,6 +108,7 @@ sudo apt-get install google-chrome-stable
 google-chrome --version
 ```
 4.Visit https://sites.google.com/chromium.org/driver/downloads to find a corresponding version of the chrome driver to download
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230226215954.png)
 
 5.Move the downloaded chromedriver file to the /usr/local/bin/ directory and give it executable permissions. This can be done using the following command.
 ```shell
