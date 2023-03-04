@@ -115,7 +115,7 @@ google-chrome --version
 
 5.Move the downloaded chromedriver file to the /usr/local/bin/ directory and give it executable permissions. This can be done using the following command.
 ```shell
-sudo mv ~/Downloads/chromedriver /usr/local/bin/
+sudo cp ./chromedriver /usr/local/bin/
 sudo chmod +x /usr/local/bin/chromedriver
 ```
 6.Start environment on top of codio
