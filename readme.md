@@ -82,3 +82,49 @@ python3 -m flask run
 6.Until build successfully
 
 7.Access：https://lw-staff.onrender.com/
+
+## Test
+
+Run the behave command to see the results
+```shell
+behave
+```
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230304012443.png)
+
+## Test installation process notes
+1.Installing selenium
+```shell
+pip install selenium
+```
+2.Install a suitable browser for your linux environment and install a stable version. Please note that you will need root or administrator privileges to install the package.
+```shell
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+```
+
+3.Check the version of your browser
+```shell
+google-chrome --version
+```
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230304012716.png)
+
+4.Visit https://sites.google.com/chromium.org/driver/downloads to find a corresponding version of the chrome driver to download
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230226215954.png)
+
+5.Move the downloaded chromedriver file to the /usr/local/bin/ directory and give it executable permissions. This can be done using the following command.
+```shell
+sudo mv ~/Downloads/chromedriver /usr/local/bin/
+sudo chmod +x /usr/local/bin/chromedriver
+```
+6.Start environment on top of codio
+```shell
+export FLASK_APP=staff.py
+
+python3 -m flask run -h 0.0.0.0
+```
+7.Run the behave command to see the results
+```shell
+behave
+```
