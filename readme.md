@@ -83,7 +83,7 @@ python3 -m flask run
 
 7.Access：https://lw-staff.onrender.com/
 
-##Test
+## Test
 
 Run the behave command to see the results
 ```shell
@@ -91,7 +91,7 @@ behave
 ```
 ![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20230304012443.png)
 
-##Test installation process notes
+## Test installation process notes
 1.Installing selenium
 ```shell
 pip install selenium
