@@ -107,6 +107,8 @@ sudo apt-get install google-chrome-stable
 ```shell
 google-chrome --version
 ```
+![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230304012716.png)
+
 4.Visit https://sites.google.com/chromium.org/driver/downloads to find a corresponding version of the chrome driver to download
 ![image](https://github.com/wangleiz166/studyInAberdeen/blob/main/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20230226215954.png)
 
